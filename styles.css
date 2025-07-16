@@ -1,268 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-
-.food-munch-logo {
-    width: 80px;
-    height: 70px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#navItem1 {
-    color: #323f4b;
-    font-family: "Roboto";
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2c2c2c;
+  background-image: url(./image.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  line-height: 1.6;
 }
 
-#navItem2 {
-    color: #323f4b;
-    font-family: "Roboto";
+header {
+  background-color: rgba(70, 70, 70, 0.85);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-#navItem3 {
-    color: #323f4b;
-    font-family: "Roboto";
+h1 {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  background-clip: text;
+  color: transparent;
 }
 
-#navItem4 {
-    color: #323f4b;
-    font-family: "Roboto";
+p {
+  font-size: 1.1rem;
+  margin-top: 15px;
 }
 
-.banner-section-bg-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
-    height: 100vh;
-    background-size: cover;
+nav {
+  background-color: rgba(51, 51, 51, 0.95);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px 0;
 }
 
-.banner-heading {
-    color: white;
-    font-family: "Roboto";
-    font-size: 45px;
-    font-weight: 300;
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.banner-caption {
-    color: #f5f7fa;
-    font-family: "Roboto";
-    font-size: 24px;
-    font-weight: 300;
+nav a:hover {
+  color: #5eb1e1;
+  text-decoration: underline;
 }
 
-.custom-button {
-    color: white;
-    background-color: #d0b200;
-    width: 130px;
-    height: 45px;
-    border-width: 0;
-    border-radius: 8px;
-    margin-right: 10px;
+main {
+  max-width: 920px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-.custom-outline-button {
-    color: #d0b200;
-    background-color: transparent;
-    width: 130px;
-    height: 45px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d0b200;
-    border-radius: 8px;
+section {
+  margin-bottom: 50px;
 }
 
-.wcu-section {
-    background-color: #f9fbfe;
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 6px solid #4c565c;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
-.wcu-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #a55158;
+  margin-bottom: 10px;
 }
 
-.wcu-section-description {
-    color: #5a7184;
-    font-family: "Roboto";
-    font-size: 16px;
+.project-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.wcu-card {
-    text-align: center;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e5eaf4;
-    border-radius: 16px;
+#skills {
+  margin: 20px 0;    
+  padding-top: 0;
 }
 
-.wcu-card-image {
-    width: 87px;
-    height: 90px;
+#skills h2 {
+  margin-bottom: 10px;
+  margin-left: 0;     
+  padding-left: 0;    
 }
 
-.wcu-card-title {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 22px;
-    font-weight: 500;
+#skills ul {
+  padding-left: 0;
+  margin-top: 0;
+  list-style-position: inside;
 }
 
-.wcu-card-description {
-    color: #7b8794;
-    font-family: "Roboto";
-    font-size: 16px;
+#contact a {
+  color: #3c54a3;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
 }
 
-.offers {
-    color: #323f4b;
-    font-style: italic;
-    font-weight: 600;
+#contact a:hover {
+  color: #5eb1e1;
 }
 
-.explore-menu-section {
-    background-color: white;
-}
-
-.menu-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.menu-item-image {
-    border-radius: 16px;
-}
-
-.menu-card-title {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 24px;
-}
-
-.menu-item-link {
-    color: #d0b200;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.menu-item-card {
-    border-radius: 16px;
-}
-
-.healthy-food-section {
-    background-color: #f9fbfe;
-}
-
-.healthy-food-section-img {
-    width: 270px;
-}
-
-.healthy-food-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.healthy-food-section-description {
-    color: #5a7184;
-    font-family: "Roboto";
-    font-size: 16px;
-}
-
-.delivery-and-payment-section {
-    background-color: white;
-}
-
-.delivery-and-payment-section-img {
-    width: 270px;
-}
-
-.delivery-and-payment-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.delivery-and-payment-section-description {
-    color: #5a7184;
-    font-family: "Roboto";
-    font-size: 16px;
-}
-
-.payment-card-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 28px;
-}
-
-.thanking-customers-section {
-    background-color: #d0b2001a;
-}
-
-.thanking-customers-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.thanking-customers-section-description {
-    color: #5a7184;
-    font-family: "Roboto";
-    font-size: 16px;
-}
-
-.thanking-customers-section-img {
-    width: 270px;
-    margin-bottom: 20px;
-}
-
-.follow-us-section {
-    background-color: white;
-}
-
-.follow-us-section-heading {
-    text-align: center;
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.follow-us-icon-container {
-    background-color: #faf7e8;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    margin: 15px;
-    padding-top: 22px;
-    padding-bottom: 14px;
-    padding-right: 16px;
-    padding-left: 22px;
-}
-
-.icon {
-    color: #d0b200;
-    font-size: 35px;
-}
-
-.footer-section {
-    background-color: #0d2436;
-}
-
-.footer-section-mail-id {
-    color: #959ead;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.footer-section-address {
-    color: #959ead;
-    font-family: "Roboto";
-    font-size: 14px;
+footer {
+  background-color: #5f5d6d;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
 }
